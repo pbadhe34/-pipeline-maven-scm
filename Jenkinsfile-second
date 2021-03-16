@@ -6,7 +6,7 @@ node {
    def javaHome = tool 'java8'      
    stage('Build'){  
      echo 'Building the code'
-     bat "%JAVA_HOME%/bin/javac.exe" src/Test.java"  
+     bat "%JAVA_HOME%/bin/javac -version"  
      bat "${mvnHome}/bin/mvn package" 
      echo 'Building the code done'      
    }
