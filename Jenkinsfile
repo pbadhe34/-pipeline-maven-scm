@@ -9,7 +9,7 @@
         stage('Build') {
             steps {                 
                 
-                sh "rm -r -f ./Maven-Spring-App"
+                bat "rm -r -f ./Maven-Spring-App"
                 
                 git url: 'git://github.com/pbadhe34/Maven-Spring-App.git', branch: 'main'               
 
